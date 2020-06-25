@@ -1,0 +1,57 @@
+<br>
+<h2 style="text-align: center;"><u>Cargar producto</u></h2>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-info-circle" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Nombre" [(ngModel)]="nombre">     
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-info-circle" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Marca" [(ngModel)]="marca">     
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-shopping-cart" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Stock" [(ngModel)]="stock">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-info-circle" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Tipo" [(ngModel)]="tipo">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-map-marker" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Local" [(ngModel)]="local">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div class="ui-g-12 ui-md-4" style="margin-left: auto; margin-right: auto;">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-money-bill" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Precio" [(ngModel)]="precio">
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4"></div>
+    <div style="margin-left: auto; margin-right: auto;">
+        <br>
+        <button pButton label="Cargar producto" icon="pi pi-plus" class="ui-menuitem ui-button-success" (click)="cargarProducto()"></button>
+    </div>
+</div>
+<h2 style="text-align: center;">{{message}}</h2>

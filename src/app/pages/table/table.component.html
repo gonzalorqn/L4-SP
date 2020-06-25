@@ -1,0 +1,30 @@
+<br>
+<table class="table" id="tablaProd">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Stock</th>
+        <th>Precio</th>
+        <th>Tipo</th>
+        <th>Local</th>
+        <th>Localidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of productos">
+        <td>{{prod.nombre}}</td>
+        <td>{{prod.marca}}</td>
+        <td>{{prod.stock}}</td>
+        <td>{{prod.precio}}</td>
+        <td>{{prod.tipo}}</td>
+        <td>{{prod.local}}</td>
+        <td>{{prod.localidad}}</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+<br>
+  <div style="margin-left: 35%;">
+    <app-descargas [tabla]="productos"></app-descargas>
+  </div>
